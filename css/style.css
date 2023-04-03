@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap");
+
+
+/*header*/
+.header {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 99px;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #fff;
+}
+.header-inner {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.logo {
+  float: left;
+  width: 200px;
+  padding-top: 10px;
+}
+.logo>a>img {
+  width: 100%;
+}
+
+/*nav*/
+.nav {
+  text-align: center;
+}
+.gnb>li {
+  position: relative;
+  display: inline-block;
+  padding: 37px 40px;
+}
+
+.gnb>li>a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5c5859;
+  transition: 0.4s;
+}
+.gnb>li.addGnb {
+  background-color: #fbf1ec;
+}
+.gnb>li.addGnb>a {
+  
+  color:#ee2d36;
+}
+.navsub_bg {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  height: 264px;
+  background-color: #fbf1ec;
+}
+.sub {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.sub>li {
+  padding-bottom: 10px;
+}
+.sub>li>a {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c5859;
+  transition: 0.4s;
+}
+.sub>li>a:hover {
+  color: #ee2d36;
+  text-decoration: underline;
+}
+
+
+
+/*main*/
+.main {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+}
+.content {
+  background: url('../img/bg.png') no-repeat left center;
+  background-size: cover;
+}
+.content-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/*mainLocation*/
+.mainLocation {
+  position: fixed;
+  top: 50%;
+  left: 180px;
+  transform: translate(-50%,0);
+  margin-left: 50px;
+  width: 350px;
+}
+.mainLocation>h1 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #aa1e1d;
+}
+.mainLocation>a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  padding: 15px 0 0 25px;
+  color: #5c5859;
+  transition: 0.4s;
+}
+.mainLocation>a.click {
+  color: #ee2d36;
+  font-weight: 600;
+}
+.mainLocation>a::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left:-5px;
+  width: 10px;
+  height: 10px;
+  background-color: #5c5859;
+}
+.mainLocation>a.click::after {
+  background: url('../img/menuOn.png') no-repeat 0 0;
+  height: 24px;
+  width: 90px;
+  left: -80px;
+  top: 10px;
+}
+
+/*MainfitBtn*/
+.MainfitBtn {
+  text-align: center;
+}
+.MainfitBtn>ul>li {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+}
+.MainfitBtn>ul>li>a {
+  background-color: #e3e3e3;
+  padding: 5px 40px;
+  font-size: 20px;
+  border-radius: 50px;
+  color: #444444;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.MainfitBtn>ul>li>a.now {
+  background-color: #ee2d36;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/*fitBtn-wrap*/
+.fitBtn-wrap {
+  padding: 50px 0;
+  text-align: center;
+}
+.fitBtn-wrap>a {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #5c5859;
+  margin: 0 15px;
+  padding-bottom: 15px;
+}
+.fitBtn-wrap>a.Nowon {
+  border-bottom: 5px solid #ee2d36;
+  color: #ee2d36;
+}
+
+
+/*fit-content*/
+.fit-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.modelBox {
+  width: 319px;
+  float: left;
+}
+.modelBox>img {
+    width: 100%;
+}
+.modelDetail {
+  float: right;
+  width: 481px;
+  text-align: left;
+}
+.modelTabBtn>li {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+.modelTabBtn>li>a {
+  background-color: #e3e3e3;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #444444;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.modelTabBtn>li>a.on {
+  background-color: #ee2d36;
+  color: #fff;
+  font-weight: 500;
+}
+.detailVew {
+  margin-top: 80px;
+}
+.detailVew>ul>li {
+  display: none;
+}
+.detailVew>ul>li.view {
+  display: block;
+}
+.detailVew>ul>li .fabricDocu>h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #003f90;
+}
+.detailVew>ul>li .fabricDocu>span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  padding: 10px 0 30px 0;
+}
+.detailVew>ul>li>small {
+  display: block;
+  padding-top:60px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+}
+.detailVew>ul>li .fabricImg {
+  border-radius: 100%;
+ }
